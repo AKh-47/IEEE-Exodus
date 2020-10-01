@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  @include respond(tab-land) {
+    font-size: 90%;
+  }
+
+  @include respond(tab-port) {
+    font-size: 85%;
+  }
+
+  @include respond(phone) {
+    font-size: 80%;
+  }
+
+  @include respond(big-desktop) {
+    font-size: 140%;
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #757575;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  // background: linear-gradient(to bottom, #7ed56f88, #28b48588);
+  background-color: #ebf7fd;
+  &:hover {
+    // background: linear-gradient(to top, #7ed56f, #28b485);
+  }
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #1e1e21;
+  color: #f6f6f6;
+  overflow-x: hidden;
+  padding: 3.5rem;
+}
+
+a {
+  &:link,
+  &:visited {
+    color: inherit;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+textarea {
+  resize: none;
+}
+
+input,
+textarea {
+  border: none;
+  &:focus {
+    outline: none;
+  }
+}
+
+button {
+  border: none;
+
+  &:focus {
+    outline: none;
+  }
+}
