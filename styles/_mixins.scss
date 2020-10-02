@@ -1,3 +1,26 @@
+@mixin units {
+  position: relative;
+  &::after {
+    content: "";
+    height: 3px;
+    width: 100%;
+    background-color: #222;
+    position: absolute;
+    top: 65%;
+    left: 0;
+  }
+  &::before {
+    content: "";
+    height: 3px;
+    width: 100%;
+    background-color: #222;
+    position: absolute;
+    top: 25%;
+    left: 0;
+    transform: rotate(-10deg);
+  }
+}
+
 @mixin respond($breakpoint) {
   @if $breakpoint== very-tiny-phone {
     @media (max-width: 19.0625em) {
