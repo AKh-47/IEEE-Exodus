@@ -296,6 +296,30 @@
       //   animation: noise-anim-2 15s infinite linear alternate-reverse;
     }
   }
+
+  &__search-bar {
+    background-color: #fefefe;
+    width: 12%;
+    border-radius: 5000px;
+    padding: 0.5rem 0;
+    padding: 0.7rem 0.5rem;
+    transition: 0.35s all cubic-bezier(1, -0.53, 0.11, 0.64);
+
+    &:focus-within {
+      width: 21%;
+    }
+  }
+
+  &__search-icon {
+    color: #212121;
+    font-size: 1.5rem;
+  }
+
+  &__search-input {
+    background-color: inherit;
+    font-size: 1.5rem;
+    width: 80%;
+  }
 }
 
 #balance {

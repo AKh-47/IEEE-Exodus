@@ -1,0 +1,92 @@
+const games = [
+  {
+    name: "Game One",
+    price: 20,
+    numOfPlayers: 1,
+    image: "bg1.jpeg",
+  },
+  {
+    name: "Game2",
+    price: 80,
+    numOfPlayers: 1,
+    image: "bg2.jpeg",
+  },
+  {
+    name: "Game3",
+    price: 20,
+    numOfPlayers: 1,
+    image: "bg3.jpeg",
+  },
+  {
+    name: "Game4",
+    price: 20,
+    numOfPlayers: 1,
+    image: "bg4.jpeg",
+  },
+  {
+    name: "Game5",
+    price: 20,
+    numOfPlayers: 1,
+    image: "bg5.jpeg",
+  },
+  {
+    name: "Game6",
+    price: 20,
+    numOfPlayers: 1,
+    image: "bg6.jpeg",
+  },
+  {
+    name: "testing",
+    price: 20,
+    numOfPlayers: 1,
+    image: "bg7.jpeg",
+  },
+  {
+    name: "Game8",
+    price: 20,
+    numOfPlayers: 1,
+    image: "bg8.jpeg",
+  },
+  {
+    name: "bla bla",
+    price: 20,
+    numOfPlayers: 1,
+    image: "bg9.jpeg",
+  },
+  {
+    name: "Game10",
+    price: 20,
+    numOfPlayers: 1,
+    image: "bg10.jpeg",
+  },
+  {
+    name: "Game11",
+    price: 20,
+    numOfPlayers: 1,
+    image: "",
+  },
+  {
+    name: "Game12",
+    price: 20,
+    numOfPlayers: 1,
+    image: "",
+  },
+  {
+    name: "Game13",
+    price: 20,
+    numOfPlayers: 1,
+    image: "",
+  },
+  {
+    name: "Game14",
+    price: 20,
+    numOfPlayers: 1,
+    image: "",
+  },
+  {
+    name: "Game15",
+    price: 20,
+    numOfPlayers: 1,
+    image: "",
+  },
+];
