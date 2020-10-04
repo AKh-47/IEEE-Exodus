@@ -69,6 +69,7 @@
     font-size: 2.75rem;
     cursor: pointer;
   }
+
   &__balance {
     font-size: 2.75rem;
     i {
@@ -106,6 +107,12 @@
     justify-content: space-between;
     padding: 0 2rem 2rem 2rem;
     // background-color: red;
+
+    .fa-500px {
+      span {
+        @include units(#111);
+      }
+    }
   }
 
   &__border {
@@ -158,15 +165,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #1e1e21;
+    background-color: #111;
     // opacity: 0.75;
     height: 27.5rem;
     transform: rotate(10deg);
-    border-radius: 10px;
+    border-radius: 12px;
     transition: 0.5s all;
     // opacity: 0.5;
     position: relative;
     // animation: fadeIn 0.5s ease-in backwards;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
 
     i {
       font-size: 1.5rem;
@@ -253,7 +262,12 @@
     background-blend-mode: multiply;
     background-position: -145px -90px;
 
-    transition: 0.5s all;
+    transition: 0.2s all;
+    border: 2px solid #fefefe;
+  }
+
+  &__card:hover &__card-bg {
+    border: none;
   }
 
   &__card:hover &__card-name {
@@ -303,7 +317,7 @@
     border-radius: 5000px;
     padding: 0.5rem 0;
     padding: 0.7rem 0.5rem;
-    transition: 0.35s all cubic-bezier(1, -0.53, 0.11, 0.64);
+    transition: 0.35s all ease;
 
     &:focus-within {
       width: 21%;
@@ -323,5 +337,9 @@
 }
 
 #balance {
-  @include units;
+  @include units(black);
+}
+
+.no-animation {
+  animation: none !important;
 }
